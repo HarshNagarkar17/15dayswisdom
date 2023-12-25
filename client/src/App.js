@@ -1,17 +1,14 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-
+import { Home } from './pages/Home';
+import {Routes,Route} from "react-router-dom"
+import { NotFound } from './pages/NotFound';
 function App() {
   return (
-    <section>
-    <div className="container">
-      <div className="holder d-flex align-items-center justify-content-center">
-        <h1  style={{ width: 'fit-content' }}>
-        🚀 We're busy crafting something awesome behind the scenes. Stay tuned for our big reveal – your next online adventure is just around the corner! 🌟 #ComingSoon
-        </h1>
-      </div>
-    </div>
-    </section>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/*' element={<NotFound/>}/>
+    </Routes>
   );
 }
 
