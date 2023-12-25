@@ -1,6 +1,7 @@
 import React from 'react'
 
 export const Home = () => {
+  document.title = "Home"
   return (
     <section>
     <div className="container">
