@@ -1,2 +1,5 @@
 client/node_modules
 server/
+client/package-lock.json
+favicon_io/
+favicon_io.zip
